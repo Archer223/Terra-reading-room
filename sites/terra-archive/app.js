@@ -2,22 +2,25 @@ import {CATEGORY,DEMO_ID,displayTitle,escapeHTML as e,plain,safeURL,filterGroups
 import {createEpub} from "./epub.js";
 
 const $=s=>document.querySelector(s), main=$("#main"), storageKey="terra-reading-room-state-v1";
-const initialState={version:1,favorites:[],bookmarks:{},positions:{},completed:[],prefs:{theme:"light",font:19,directives:false},last:null};
+const initialState={version:1,favorites:[],bookmarks:{},positions:{},completed:[],prefs:{theme:"dark",font:19,directives:false},last:null};
 let state=structuredClone(initialState),catalog,sources,lists,bodies=new Map(),db=null,routeGeneration=0,observer=null,saveTimer,toastTimer;
 let bodyIndex={count:0,items:{}},bodyLoads=new Map();
 let category="all",region="all",query="",sort="catalogue",page=1,libraryMode="library",importTarget=null,currentStory=null,currentNode=null;
-const pageSize=12, palettes=[["#e1e6da","#3a5144"],["#e8e0d2","#63543a"],["#e3deda","#64514b"],["#dce5e5","#3e5860"],["#e6e3d4","#66613c"],["#dfe0e7","#4d526c"]];
+const pageSize=12, palettes=[["#1b2a35","#73d9ec"],["#252f38","#bad1df"],["#222f32","#91d5cf"],["#272b38","#b4c2e4"],["#26302f","#b3d0c0"],["#2c2e32","#d1c5ac"]];
 const searchIcon='<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4.5 4.5"/></svg>';
 
 try{const saved=JSON.parse(localStorage.getItem(storageKey));if(saved&&saved.version===1)state={...initialState,...saved,prefs:{...initialState.prefs,...saved.prefs}};}catch{}
+// Apply the requested appearance once; retain every reading record and later theme choice.
+try{if(localStorage.getItem("terra-reading-room-appearance")!=="terminal-v1"){state.prefs.theme="dark";localStorage.setItem(storageKey,JSON.stringify(state));localStorage.setItem("terra-reading-room-appearance","terminal-v1");}}catch{}
 state.prefs.font=Math.min(28,Math.max(15,Number(state.prefs.font)||19));
-document.documentElement.dataset.theme=state.prefs.theme==="dark"?"dark":"light";
+function applyTheme(){const dark=state.prefs.theme!=="light";document.documentElement.dataset.theme=dark?"dark":"light";$("meta[name=theme-color]").content=dark?"#10161c":"#edf2f5";const label=dark?"切换为浅色主题":"切换为深色主题";$("#theme-button").setAttribute("aria-label",label);$("#theme-button").title=label;}
+applyTheme();
 document.documentElement.style.setProperty("--reading-size",state.prefs.font+"px");
 
 function notify(text){clearTimeout(toastTimer);const t=$("#toast");t.textContent=text;t.classList.add("visible");toastTimer=setTimeout(()=>t.classList.remove("visible"),4600);}
 function persist(){try{localStorage.setItem(storageKey,JSON.stringify(state));}catch{notify("浏览器存储空间不足，请先导出阅读记录备份。");}}
 function updateNavigation(active){document.querySelectorAll("[data-nav]").forEach(a=>a.classList.toggle("active",a.dataset.nav===active));$("#saved-count").textContent=state.favorites.length;}
-function crumbs(name){$("#breadcrumb").innerHTML=`阅览室 <span>/</span> ${e(name)}`;}
+function crumbs(name){$("#breadcrumb").innerHTML=`档案终端 <span>/</span> <b>${e(name)}</b>`;}
 function anchor(kind,id){return `#${kind}/${encodeURIComponent(id)}`;}
 function groupById(id){return catalog.groups.find(g=>g.id===id);}
 function palette(id){let n=0;for(const c of id)n=(n*31+c.charCodeAt(0))>>>0;return palettes[n%palettes.length];}
@@ -55,7 +58,7 @@ function safeState(raw){
   clean.completed=[...new Set(raw.completed.filter(x=>allowed.has(x)))];
   for(const [id,value] of Object.entries(raw.bookmarks||{}))if(allowed.has(id)&&typeof value==="string"&&/^[A-Za-z0-9_-]+$/.test(value))clean.bookmarks[id]=value;
   for(const [id,p] of Object.entries(raw.positions||{}))if(allowed.has(id)&&p&&typeof p.node==="string"&&/^[A-Za-z0-9_-]+$/.test(p.node))clean.positions[id]={node:p.node,percent:Math.min(100,Math.max(0,Number(p.percent)||0))};
-  clean.prefs={theme:raw.prefs?.theme==="dark"?"dark":"light",font:Math.min(28,Math.max(15,Number(raw.prefs?.font)||19)),directives:!!raw.prefs?.directives};
+  clean.prefs={theme:raw.prefs?.theme==="light"?"light":"dark",font:Math.min(28,Math.max(15,Number(raw.prefs?.font)||19)),directives:!!raw.prefs?.directives};
   clean.last=allowed.has(raw.last)?raw.last:null;return clean;
 }
 
@@ -66,17 +69,17 @@ function saveBodies(values){return new Promise((resolve,reject)=>{if(!db)return 
 function cover(g){
   const [bg,ink]=palette(g.id),n=g.category==="main"?String(g.id.match(/\d+/)?.[0]||0).padStart(2,"0"):String(g.order+1).padStart(2,"0");
   const top={main:"MAIN THEME",event:"EVENT ARCHIVE",short:"SHORT STORIES",record:"OPERATOR RECORD",comic:"TERRA HISTORICUS"}[g.category];
-  return `<div class="book-cover is-${g.category}" style="--cover:${bg};--cover-ink:${ink}"><span class="cover-top">${top}</span><span class="cover-number">${e(n)}</span><strong class="cover-title">${e(g.title)}</strong><span class="cover-bottom">${e(g.operator||"ARKNIGHTS · STORY INDEX")}</span></div>`;
+  return `<div class="book-cover is-${g.category}" style="--cover:${bg};--cover-ink:${ink}"><span class="cover-top">${top}</span><span class="cover-number" aria-hidden="true">${e(n)}</span><strong class="cover-title">${e(g.title)}</strong><span class="cover-bottom">${e(g.operator||"TERRA / STORY ARCHIVE")}</span><span class="cover-corner" aria-hidden="true">↗</span></div>`;
 }
 function bookCard(g){
   const count=localCount(g),done=finished(g),saved=state.favorites.includes(g.id);
   return `<article class="book-card"><button class="save-book ${saved?"saved":""}" data-action="save" data-id="${e(g.id)}" aria-label="${saved?"取消收藏":"收藏"}《${e(displayTitle(g))}》" aria-pressed="${saved}">${saved?"★":"☆"}</button><a href="${anchor("book",g.id)}" class="cover-link" tabindex="-1" aria-hidden="true">${cover(g)}</a><div class="book-info"><h3><a href="${anchor("book",g.id)}">${e(displayTitle(g))}</a></h3><p><span>${CATEGORY[g.category]}${g.count!=null?` · ${g.count} 篇`:""}</span><span>${g.date?.slice(0,4)||"日期待核验"}</span></p>${regionTags(g)}<div class="mini-status">${g.category==="comic"?"官方原作入口":count?`可读正文 ${count}/${g.count} 篇`:"正文未收录"}</div>${done?`<div class="progress-track" aria-label="已读 ${done} 篇"><span style="width:${Math.round(done/g.count*100)}%"></span></div>`:""}</div></article>`;
 }
-function hero(){return `<section class="hero"><div><div class="eyebrow">THE STORIES, GATHERED HERE</div><h1>把散落的故事，<br>读成一段旅程。</h1><p>从最初的章节，到远方的只言片语。<br>沿着篇章阅读，也为下一次重逢留一枚书签。</p><div class="button-row"><a class="button primary" href="${anchor("book","main_0")}">从主线开始 <span aria-hidden="true">↗</span></a><a class="button text" href="#demo">试读原创样本 <span aria-hidden="true">→</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="art-cross"></div><div class="art-ring"></div><span class="art-star">✧</span><div class="art-book"><small>ARCHIVE / 01</small><b>故事留存</b><span>TERRA · READING ROOM</span></div><span class="art-label">A PLACE FOR STORIES</span></div></section>`;}
+function hero(){return `<section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>TERRA / STORY ARCHIVE</div><h1>连接泰拉，<br><span>读取故事。</span></h1><p>从罗德岛出发，沿着大地的脉络，<br>检索篇章、回溯往事，继续未完的旅程。</p><div class="button-row"><a class="button primary" href="${anchor("book","main_0")}">从主线开始 <span aria-hidden="true">↗</span></a><a class="button" href="#regions">按地区检索 <span aria-hidden="true">→</span></a></div><div class="hero-caption">明日方舟剧情档案 <span>/</span> 国服简中</div></div><div class="hero-art" aria-hidden="true"><div class="art-heading"><span>ARCHIVE STRUCTURE</span><span>01 — CN</span></div><svg class="archive-blueprint" viewBox="0 0 420 260" fill="none"><defs><linearGradient id="archive-fill" x1="125" y1="30" x2="290" y2="250" gradientUnits="userSpaceOnUse"><stop stop-color="#59d6ed" stop-opacity=".2"/><stop offset="1" stop-color="#59d6ed" stop-opacity=".015"/></linearGradient></defs><path class="blueprint-faint" d="M28 204h365M28 225h365M49 34v191M370 34v191M209 12v236M19 130h384" stroke-dasharray="3 6"/><path class="blueprint-base" d="m79 209 131-73 132 73-132 43zM79 198l131-74 132 74M79 187l131-74 132 74"/><path class="blueprint-solid" fill="url(#archive-fill)" d="m122 72 88-50 89 50v124l-89 50-88-50z"/><path class="blueprint-solid" d="m122 72 88 50 89-50M210 122v124M122 96l88 50 89-50M122 120l88 50 89-50M122 144l88 50 89-50M122 168l88 50 89-50M145 59l88 50M167 46l88 50M188 34l88 50"/><path class="blueprint-strong" d="m145 143 42 24v14l-42-24zM233 156l43-24v15l-43 24M233 180l43-24v15l-43 24"/><path class="blueprint-callout" d="M122 96H58V64H25M299 145h45v-42h45M210 246v9"/><path class="blueprint-strong" d="M16 57v14M9 64h14M388 96v14M381 103h14"/><circle cx="122" cy="96" r="3"/><circle cx="299" cy="145" r="3"/></svg><div class="art-foot"><span>STORY FRAGMENTS</span><strong>${catalog.stats.stories.toLocaleString()}</strong><span class="art-file-mark">TEXT / CN</span></div></div></section>`;}
 function renderLibrary(mode="library"){
   libraryMode=mode;updateNavigation(mode);crumbs(mode==="regions"?regionName(catalog,region):mode==="shelf"?"我的收藏":"总书架");
   const stats=catalog.stats;
-  main.innerHTML=(mode==="regions"?regionShelfHeader():mode==="library"?hero()+`<div class="collection-notes"><span><b>${stats.categories.main}</b>卷主线</span><span><b>${stats.categories.event}</b>部活动</span><span><b>${stats.categories.short}</b>个故事集</span><span><b>${stats.categories.record}</b>份密录</span><span><b>${stats.categories.comic}</b>个官方漫画入口</span><span>目录快照 / 国服简中</span></div>`:`<div class="page-title"><div class="eyebrow">YOUR PERSONAL SHELF</div><h1>故事在这里等你。</h1><p>将想读的作品放进收藏，按自己的节奏继续。收藏与阅读记录保存在当前浏览器，可在下方备份。</p><div class="button-row"><button class="button primary" data-action="export-shelf">导出收藏 EPUB ↓</button><button class="button" data-action="backup-state">备份阅读记录</button><button class="button" data-action="restore-state">恢复阅读记录</button></div></div>`)+
+  main.innerHTML=(mode==="regions"?regionShelfHeader():mode==="library"?hero()+`<div class="collection-notes" aria-label="档案收录统计"><span><b>${stats.categories.main}</b><span>主线章节<small>MAIN THEME</small></span></span><span><b>${stats.categories.event}</b><span>活动剧情<small>EVENT ARCHIVE</small></span></span><span><b>${stats.categories.short}</b><span>故事集<small>SHORT STORIES</small></span></span><span><b>${stats.categories.record}</b><span>干员密录<small>OPERATOR RECORD</small></span></span><span><b>${stats.categories.comic}</b><span>官方漫画入口<small>COMIC LINKS</small></span></span><span><b>${bodyIndex.count.toLocaleString()}</b><span>已收录正文<small>STORY TEXTS</small></span></span></div>`:`<div class="page-title"><div class="eyebrow">YOUR PERSONAL SHELF</div><h1>故事在这里等你。</h1><p>将想读的作品放进收藏，按自己的节奏继续。收藏与阅读记录保存在当前浏览器，可在下方备份。</p><div class="button-row"><button class="button primary" data-action="export-shelf">导出收藏 EPUB ↓</button><button class="button" data-action="backup-state">备份阅读记录</button><button class="button" data-action="restore-state">恢复阅读记录</button></div></div>`)+
     `<section aria-label="篇目筛选"><div class="section-heading"><h2>${mode==="regions"?"地区篇目":mode==="shelf"?"我的收藏":"全部篇目"}<small>在目录中找到下一篇故事</small></h2><a href="#sources">查看收录范围 ↗</a></div><div class="search-row"><label class="search-box">${searchIcon}<input id="catalog-search" type="search" placeholder="搜索作品、篇目、地区或干员…" aria-label="搜索目录" value="${e(query)}"><span class="search-key">⌘ K</span></label>${regionSelect()}<select id="sort-order" aria-label="篇目排序"><option value="catalogue">官方目录顺序</option><option value="oldest">已知日期：从早到晚</option><option value="newest">已知日期：从晚到早</option></select></div><div class="filter-row">${[["all","全部",stats.groups],...Object.entries(CATEGORY).map(([key,label])=>[key,label,stats.categories[key]||0])].map(([key,label,count])=>`<button class="chip ${category===key?"active":""}" data-action="filter" data-value="${key}" aria-pressed="${category===key}">${label}<small>${count}</small></button>`).join("")}<span class="result-label" id="result-label" aria-live="polite"></span></div></section><section id="library-results" aria-label="目录结果"></section><p class="page-note">游戏正文已从你提供的本地资料接入。地区与时间待考证项保留标记；漫画及站外叙事仍按各自收录状态展示。</p>`;
   $("#sort-order").value=sort;$("#region-filter").value=region;
   renderResults();
@@ -154,7 +157,7 @@ async function renderRoute(preserveScroll=false){
   else renderLibrary();
   if(generation!==routeGeneration)return;
   if(preserveScroll)window.scrollTo({top:oldY,behavior:"instant"});else if(!currentStory||!state.positions[currentStory])window.scrollTo({top:0,behavior:"instant"});
-  document.title=(currentStory?displayTitle(groupById(catalog.stories[currentStory]?.group_id),catalog.stories[currentStory]?.title||bodies.get(currentStory)?.title):name==="book"?displayTitle(groupById(id)):name==="regions"?(id?regionName(catalog,id):"地区书架"):null)||"故事留在这里";document.title+=" · 泰拉阅览室";
+  document.title=(currentStory?displayTitle(groupById(catalog.stories[currentStory]?.group_id),catalog.stories[currentStory]?.title||bodies.get(currentStory)?.title):name==="book"?displayTitle(groupById(id)):name==="regions"?(id?regionName(catalog,id):"地区书架"):null)||"剧情档案终端";document.title+=" · 泰拉阅览室";
 }
 function download(data,filename,type="application/json"){
   const blob=data instanceof Blob?data:new Blob([data],{type}),url=URL.createObjectURL(blob),link=document.createElement("a");link.href=url;link.download=filename;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
@@ -203,7 +206,7 @@ main.addEventListener("click",async event=>{
     else if(action==="export-story")await exportStory(id);
   }catch(error){notify(error.message||"操作未完成，请重试。");}
 });
-$("#theme-button").addEventListener("click",()=>{state.prefs.theme=state.prefs.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=state.prefs.theme;persist();});
+$("#theme-button").addEventListener("click",()=>{state.prefs.theme=state.prefs.theme==="dark"?"light":"dark";applyTheme();persist();});
 $("#body-file").addEventListener("change",async event=>{
   const files=[...event.target.files];event.target.value="";if(!files.length)return;
   try{
@@ -231,7 +234,7 @@ $("#body-file").addEventListener("change",async event=>{
 });
 $("#state-file").addEventListener("change",async event=>{
   const file=event.target.files[0];event.target.value="";if(!file)return;
-  try{if(file.size>5*1024*1024)throw new Error("进度文件过大。");state=safeState(JSON.parse(await file.text()));persist();document.documentElement.dataset.theme=state.prefs.theme;document.documentElement.style.setProperty("--reading-size",state.prefs.font+"px");await renderRoute(true);notify("阅读记录已恢复；本地正文保留。");}catch(error){notify("恢复失败："+error.message);}
+  try{if(file.size>5*1024*1024)throw new Error("进度文件过大。");state=safeState(JSON.parse(await file.text()));persist();applyTheme();document.documentElement.style.setProperty("--reading-size",state.prefs.font+"px");await renderRoute(true);notify("阅读记录已恢复；本地正文保留。");}catch(error){notify("恢复失败："+error.message);}
 });
 window.addEventListener("hashchange",()=>{if(catalog)renderRoute();});
 document.addEventListener("keydown",event=>{if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==="k"){event.preventDefault();if(!$("#catalog-search")){location.hash="library";setTimeout(()=>$("#catalog-search")?.focus(),0);}else $("#catalog-search").focus();}});
