@@ -1,0 +1,498 @@
+{
+  "cutoff": "2026-11-03",
+  "source_kind": "user_provided_local_files",
+  "revision": "user-sha256:d7c79fad60eb97dee5b06bfc359ecc9eb6516ce4d7c8253891480d9c37746824",
+  "workbooks": [
+    {
+      "file": "Mainline.xlsx",
+      "sha256": "2151b797d0f99e5f6db617654e6599e73d63670f7c1ebcd42e294fb0d19e652e",
+      "entries": 429,
+      "imported": 429
+    },
+    {
+      "file": "Operators_Records.xlsx",
+      "sha256": "d9770161ba418dd481fdb6c8e19073395656ccdd4e8d3882be11a8ed87f7d935",
+      "entries": 399,
+      "imported": 399
+    },
+    {
+      "file": "活动与故事集/1stact_骑兵与猎人.xlsx",
+      "sha256": "79d7ee1507c594f54502e2c6946495a92377830381fef75680a2300642b92eb4",
+      "entries": 16,
+      "imported": 16
+    },
+    {
+      "file": "活动与故事集/act10d5_乌萨斯的孩子们.xlsx",
+      "sha256": "fc4532b098a029943a72251b8062bb3729a22f2332dea1c0121f51c3e738d41c",
+      "entries": 7,
+      "imported": 7
+    },
+    {
+      "file": "活动与故事集/act10mini_阴云火花.xlsx",
+      "sha256": "89fcd3421ecb1c7467eb0dad088bf5d28bd10d567ba41853abb2d18698b47a3a",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act11d0_沃伦姆德的薄暮.xlsx",
+      "sha256": "f20d46d2b8cdf4372004649bdad571b51e3498ab99fa0047648570cffb84c15c",
+      "entries": 20,
+      "imported": 20
+    },
+    {
+      "file": "活动与故事集/act11mini_未尽篇章.xlsx",
+      "sha256": "8b7eb01117ffb6f2f234379d5533689a1ead618d4c3b2253546d519aebb09710",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act12d0_密林悍将归来.xlsx",
+      "sha256": "9864fabc94e77f8e5277883acc4b871733479800354dfea4385833f045f9950a",
+      "entries": 21,
+      "imported": 21
+    },
+    {
+      "file": "活动与故事集/act12mini_日暮寻路.xlsx",
+      "sha256": "81b116bf942819f61ee435eac93361fbed40bfe905a2d6aa1c94cdb7909d20c9",
+      "entries": 7,
+      "imported": 7
+    },
+    {
+      "file": "活动与故事集/act12side_多索雷斯假日.xlsx",
+      "sha256": "d395906d83d13a1091c81090dc456d356f1d16e1499f48f382e7e8b195bf4590",
+      "entries": 20,
+      "imported": 20
+    },
+    {
+      "file": "活动与故事集/act13d0_踏寻往昔之风.xlsx",
+      "sha256": "52a8810b5248d3490dfa8ad7f3d9a886ad1978d3e16ceeb2119e7b77524842aa",
+      "entries": 7,
+      "imported": 7
+    },
+    {
+      "file": "活动与故事集/act13d5_玛莉娅·临光.xlsx",
+      "sha256": "64e3c3b19db06b91c072a07b123ebd5c9e852be5a5696957355af6156aa4657b",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act13mini_好久不见.xlsx",
+      "sha256": "8350a07cca469bc608462feb0c7de4040509b665e27c15e50bc35c0f5a082625",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act13side_长夜临光.xlsx",
+      "sha256": "fa5475c392f3b9a73155eee80a1dbb227f77982eb03c1159e7f362832076c110",
+      "entries": 24,
+      "imported": 24
+    },
+    {
+      "file": "活动与故事集/act14mini_春分.xlsx",
+      "sha256": "e9588ceaaeda8cf209e877db6255f31ce9f92f4491058a9aa7df01fbfd64846d",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act14side_风雪过境.xlsx",
+      "sha256": "76d2226d137b61cd07ee54df6b9e54a15e82d67445b6d1f6d9a6c3ed58f1a233",
+      "entries": 20,
+      "imported": 20
+    },
+    {
+      "file": "活动与故事集/act15d0_孤岛风云.xlsx",
+      "sha256": "628c3498d5d51aeaa6d87ac1386b2f2480fe086ecd152c321b8e56974ea7a391",
+      "entries": 18,
+      "imported": 18
+    },
+    {
+      "file": "活动与故事集/act15d5_此地之外.xlsx",
+      "sha256": "84ad32c2bec8d95db89e8a845283579826028516b5df7c6c06e16e3886a53b6a",
+      "entries": 7,
+      "imported": 7
+    },
+    {
+      "file": "活动与故事集/act15mini_眠于树影之中.xlsx",
+      "sha256": "021768e122164907694b5d7ca78fd25b684689918f7a28b38389e747987684e7",
+      "entries": 7,
+      "imported": 7
+    },
+    {
+      "file": "活动与故事集/act15side_将进酒.xlsx",
+      "sha256": "b169cfea80f21c0ca048ddc9f8cd80494f888e010ce73468e153b1275125903b",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act16d5_画中人.xlsx",
+      "sha256": "5c64a9879388d12344e900ff68fcb8fac019b8a3061b7880abae2d8908827da0",
+      "entries": 17,
+      "imported": 17
+    },
+    {
+      "file": "活动与故事集/act16mini_去咧嘴谷.xlsx",
+      "sha256": "0b042dd8164665f63a7bf904034fbc852f6f856c11f2722fe23cb43e92d11066",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act16side_吾导先路.xlsx",
+      "sha256": "3e7c4e99c0b46b763a759d663abc8d6ac861e39c914e3c7822c5f870d873e1c2",
+      "entries": 18,
+      "imported": 18
+    },
+    {
+      "file": "活动与故事集/act17d0_源石尘行动.xlsx",
+      "sha256": "ad19bbd63ce49a02ce5d1e7feae2816ffed62a16f5dbd016d3f3ca4d602eda33",
+      "entries": 17,
+      "imported": 17
+    },
+    {
+      "file": "活动与故事集/act17mini_熔炉“还魂”记.xlsx",
+      "sha256": "8ba1d7962250a4ec985e4ea5343783707c2047cdcf2b323d837419591d6a15b7",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act17side_愚人号.xlsx",
+      "sha256": "6e4a49b2b6269f888b98bce6222e21cf1551170ad76f0f8d008cc9697c32d1c0",
+      "entries": 24,
+      "imported": 24
+    },
+    {
+      "file": "活动与故事集/act18d0_遗尘漫步.xlsx",
+      "sha256": "4e1871023c1def248440942c63ad777f8de6611baa0c3c692c69733b9056ca56",
+      "entries": 14,
+      "imported": 14
+    },
+    {
+      "file": "活动与故事集/act18d3_覆潮之下.xlsx",
+      "sha256": "d3e074b55d2b2ae6ba0b972436e15ccedf3936ca8ae16dfed315ae47dc442aa9",
+      "entries": 18,
+      "imported": 18
+    },
+    {
+      "file": "活动与故事集/act18mini_我们明日见.xlsx",
+      "sha256": "e6d4fdca1cd3efc8d256544111fb50a19b50b58d27ac7d8fb369412db48e631a",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act18side_尘影余音.xlsx",
+      "sha256": "8eb4adfc36e03fcf625dfea87d5f4e1d748cb9497c3d6cf2c6f34306740a0803",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act19mini_镜中集.xlsx",
+      "sha256": "625473877d15a1615ce9f938f30324744f7aab3fe3fb5e24aa1676646804ed7a",
+      "entries": 7,
+      "imported": 7
+    },
+    {
+      "file": "活动与故事集/act19side_绿野幻梦.xlsx",
+      "sha256": "28d36481177629f2647061bb3be5127738c0bff9be5ed3b163b49f8c0e80c62f",
+      "entries": 20,
+      "imported": 20
+    },
+    {
+      "file": "活动与故事集/act20mini_十字路口.xlsx",
+      "sha256": "8e10747776de3eb92313aef16d30507ef9f9a74e53b2cbac8354d292c2813a4c",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act20side_理想城：长夏狂欢季.xlsx",
+      "sha256": "02ade1ed69438f0ad2507af320633f177f6df85940671bc3e174a427dda1460b",
+      "entries": 18,
+      "imported": 18
+    },
+    {
+      "file": "活动与故事集/act21mini_丛林症结.xlsx",
+      "sha256": "d6f698347520a397eddc59df500c89ef55b411874afb988ba4c5aa227c4c4792",
+      "entries": 7,
+      "imported": 7
+    },
+    {
+      "file": "活动与故事集/act21side_叙拉古人.xlsx",
+      "sha256": "ee1bc89ab6dc43d29ff314ce1ec34649d46045aefa4c7cce6796b318af25a20e",
+      "entries": 24,
+      "imported": 24
+    },
+    {
+      "file": "活动与故事集/act22side_照我以火.xlsx",
+      "sha256": "9cf9c7dd8219c8e987cb743c8af328acd1f7c1ad6e61c7138069db5012590e02",
+      "entries": 18,
+      "imported": 18
+    },
+    {
+      "file": "活动与故事集/act23side_登临意.xlsx",
+      "sha256": "e8cb15129f0389a1a9b0eca63f251bb45058d22e9c02b6cc4fe4510d7432f45a",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act24side_落叶逐火.xlsx",
+      "sha256": "f5ae0701df2440ae5e7d1a1869d996d811bbc3bfdbaba0819a8dd6a04e25e809",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act25side_孤星.xlsx",
+      "sha256": "d416cece1a82b9896906062ac2dff928adaeb92e3318d92c42aadd0a23e98e7b",
+      "entries": 24,
+      "imported": 24
+    },
+    {
+      "file": "活动与故事集/act26side_空想花庭.xlsx",
+      "sha256": "45a0c4d4c882b494e92e33afd6aff40617ef45dce239976b6896560425632313",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act27side_火山旅梦.xlsx",
+      "sha256": "9979f3aca88e37d3db3ced3841a57da0388b4c49b200bcebaba965cebcfb6d44",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act28side_不义之财.xlsx",
+      "sha256": "f968ab35d74bdebb5de240478d671f2234025239670298aebd986e8732a24e52",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act29side_崔林特尔梅之金.xlsx",
+      "sha256": "ad66dbfd802726d6746d503945baae29c735de78d2a54ac4f9e4aa8c303c76fc",
+      "entries": 23,
+      "imported": 23
+    },
+    {
+      "file": "活动与故事集/act30side_银心湖列车.xlsx",
+      "sha256": "b7b30d2e773f466eeeb7697f273b73a36e321ae6c4e78606c2b1fb8f70b227f2",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act31side_怀黍离.xlsx",
+      "sha256": "3a2f3749815c569c51fcbfc53f598f2eb903074772d57387ff35facf55825bd3",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act32side_水晶箭行动.xlsx",
+      "sha256": "2d15c21f4db4ce5b8d8c42232cf03fa7ead56f6fa3db346d7f7be046f125fe7d",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act33side_巴别塔.xlsx",
+      "sha256": "17e46d46c0baeb183195c555865fd801234e4de3e539307b84c598a7cd07c330",
+      "entries": 23,
+      "imported": 23
+    },
+    {
+      "file": "活动与故事集/act34side_生路.xlsx",
+      "sha256": "5c1ed079ea5013bebaeb342ba4c810673d58adbe577717e0fcf03a7fc7f9319a",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act35side_太阳甩在身后.xlsx",
+      "sha256": "83153a6d8805f84298a9ce16e644a50ed01405eb49b5ff7ae9b0590f90fbcd0b",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act36side_泰拉饭.xlsx",
+      "sha256": "363a445d6a83c9143833e7f92bbaba9599809552821e6dac29526b78d629166e",
+      "entries": 16,
+      "imported": 16
+    },
+    {
+      "file": "活动与故事集/act37side_追迹日落以西.xlsx",
+      "sha256": "f52ec3b8d4b80e043b50bea1768399467ec65901438f16a7edcf08fa884bc41f",
+      "entries": 18,
+      "imported": 18
+    },
+    {
+      "file": "活动与故事集/act38side_揭幕者们.xlsx",
+      "sha256": "d6666ec80bc22000d40ef88e36010727bca951511e52b4a2c12c34032d9ea2cf",
+      "entries": 24,
+      "imported": 24
+    },
+    {
+      "file": "活动与故事集/act39side_出苍白海.xlsx",
+      "sha256": "8ece2d89486d2300767e9e5c855a899d4ead613457cd23bcb06791be9ff0a6b3",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act3d0_火蓝之心.xlsx",
+      "sha256": "d1aa4aec55a27a9fdbc587e2f6784b5c6f57071b89b9ac43b2534a7b562ac264",
+      "entries": 26,
+      "imported": 26
+    },
+    {
+      "file": "活动与故事集/act40side_相见欢.xlsx",
+      "sha256": "e3d21b1f1741b097cc5f548144d6a58e4bd6f7ac0a7e987a4d832da1c102cbe5",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act41side_挽歌燃烧殆尽.xlsx",
+      "sha256": "2e36f71fb342fed0771b4d8de25cc62d3228c67128fb48df4be4429da6b6b961",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act42side_众生行记.xlsx",
+      "sha256": "fdd7ce14a9082e9fe34aa775ee9479bb74d4992173f0278a9db1f56660368b8c",
+      "entries": 24,
+      "imported": 24
+    },
+    {
+      "file": "活动与故事集/act43side_红丝绒.xlsx",
+      "sha256": "caa15b5305ef2915cca889ca9d4154f31eab604787531b810cf72c29b54256db",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act44side_墟.xlsx",
+      "sha256": "7a8d5e5c0c120605881fef5017c955085de6d40cc2fa7b77b44856adbcc58345",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act45side_无忧梦呓.xlsx",
+      "sha256": "326d213187be44f0216c46ae8b692fabb8c16cacd901dca1cbeb99cc52c4009d",
+      "entries": 17,
+      "imported": 17
+    },
+    {
+      "file": "活动与故事集/act46side_雪山降临1101.xlsx",
+      "sha256": "8cc3074af691efb1623bf2860b6a308a3dc7af6421a31b2c1f3ea6c418832843",
+      "entries": 24,
+      "imported": 24
+    },
+    {
+      "file": "活动与故事集/act47side_未许之地.xlsx",
+      "sha256": "77e2d61721e36ff106321754551b07a73bd94e41e32ce5a379606c2aaa630dac",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act48side_雅赛努斯复仇记.xlsx",
+      "sha256": "6a4476e010f02b72492e7375507cfa5dafc18d6a7bb5987b6ec576f7e467cd8f",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act49side_辞岁行.xlsx",
+      "sha256": "fdfc5b1698eb636c1fc4cb4b7d60e9af94ff25736713aaa6305ea02be6161f44",
+      "entries": 24,
+      "imported": 24
+    },
+    {
+      "file": "活动与故事集/act4d0_战地秘闻.xlsx",
+      "sha256": "a97a16e290ef4d75cb12ac473ef792ffb9693b83ac9c86a459a39dff761f18ca",
+      "entries": 7,
+      "imported": 7
+    },
+    {
+      "file": "活动与故事集/act50side_泡影苍霆.xlsx",
+      "sha256": "b28448e145028ac8db52aa1a50e52808a9d2e2a14c3e87bf26faa34a35ccfac0",
+      "entries": 18,
+      "imported": 18
+    },
+    {
+      "file": "活动与故事集/act51side_人们，我们.xlsx",
+      "sha256": "adc01a3d277493b4117a71b3cc898373ab72b4b04b1619473fb9fd90abee28c6",
+      "entries": 18,
+      "imported": 18
+    },
+    {
+      "file": "活动与故事集/act52side_昨日海.xlsx",
+      "sha256": "7ca0b446c8403b4f1ec134ac2e59e4af3f5234e15b5db0c566d89852c6aad98e",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act53side_直到大地变成一颗酸橙.xlsx",
+      "sha256": "4793c2c007e2ba72827ef221fea03ec062bd27c2b55010fc46529bde219cab6c",
+      "entries": 19,
+      "imported": 19
+    },
+    {
+      "file": "活动与故事集/act54side_月行水上.xlsx",
+      "sha256": "a3e5bbe771abeefd7a587e308587273191bafe51fcffd5f669edc103278b6c8f",
+      "entries": 13,
+      "imported": 13
+    },
+    {
+      "file": "活动与故事集/act55side_时间啊，向前！.xlsx",
+      "sha256": "df8341604b738c777a1d6b5c8c081577d99ad342ede1bd072a986e65b5f0ace6",
+      "entries": 24,
+      "imported": 24
+    },
+    {
+      "file": "活动与故事集/act5d0_喧闹法则.xlsx",
+      "sha256": "18d59493c47bd7d0da9eda8eb89cfdfe09e4e7f4a0dd41f82cb6742fedb8526b",
+      "entries": 27,
+      "imported": 27
+    },
+    {
+      "file": "活动与故事集/act6d5_洪炉示岁.xlsx",
+      "sha256": "3cb6d59a8f2ef46be13d646db7f72bbc200769a7919055642530e7d552200402",
+      "entries": 3,
+      "imported": 3
+    },
+    {
+      "file": "活动与故事集/act7d5_午间逸话.xlsx",
+      "sha256": "699aca3c7c813db110a50b6907fcd892a1831552f72c5010841e9b84e2270189",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act7mini_灯火序曲.xlsx",
+      "sha256": "db03976f478c44a973bd518b1f8ed49a3c49c79b6f794794cea6dae7b18b7362",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act8mini_如我所见.xlsx",
+      "sha256": "fe5865dc3cc41de9d7ddc20340906051b722e325749de721035318c3f016a4a1",
+      "entries": 6,
+      "imported": 6
+    },
+    {
+      "file": "活动与故事集/act9d0_生于黑夜.xlsx",
+      "sha256": "f14473a713abaab7e394d052ae1d428f05dc4026f719257064d307fa369c10b7",
+      "entries": 13,
+      "imported": 13
+    },
+    {
+      "file": "活动与故事集/act9mini_红松林.xlsx",
+      "sha256": "9566e58fc017b65356ce8e9720959dc1e481023cea4e468a34a406fcd72bdda0",
+      "entries": 7,
+      "imported": 7
+    }
+  ],
+  "parser_sha256": "24865fe5ac0a532395c3c1a74e07ac2ff7da935a6704e6e7a98616da3a57b2f7",
+  "checked_text_and_option_cells": 431565,
+  "recovered_sheets": [
+    {
+      "file": "Mainline.xlsx",
+      "sheet": "level_main_15-15_end_variation01",
+      "id": "cn:obt/main/level_main_15-15_end_variation01",
+      "note": "Excel 工作表名被截断；已按正文逐行核对原始脚本"
+    },
+    {
+      "file": "Mainline.xlsx",
+      "sheet": "level_main_15-15_end_variation02",
+      "id": "cn:obt/main/level_main_15-15_end_variation02",
+      "note": "长名称变体的工作表缺失或被合并；按 Excel 目录从用户提供的原始脚本恢复"
+    }
+  ],
+  "note": "由用户提供的本地 Excel 与原始脚本构建；未联网抓取正文。原公开目录历史保留在 raw/snapshots。"
+}

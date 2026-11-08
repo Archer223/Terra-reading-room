@@ -1,0 +1,1193 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-03",
+  "method": "作品级主要舞台初编。以 PRTS 社区整理的场地、章节简介和地理资料为线索，并非官方分类或逐场景地理校勘。多地区作品可重复出现在多个地区；国家统计包含下属城市且组内去重。不按干员出身、种族或阵营自动推定；用户明确指定的人工分类会单独注明依据。未编目条目统一待考证。",
+  "regions": [
+    {
+      "id": "yan",
+      "name": "炎国",
+      "kind": "country",
+      "parent": null,
+      "description": "包含龙门；尚蜀、玉门、大荒城等地点在作品说明中保留。",
+      "aliases": [
+        "大炎"
+      ]
+    },
+    {
+      "id": "lungmen",
+      "name": "龙门",
+      "kind": "city",
+      "parent": "yan",
+      "description": "炎国下的独立城市入口；筛选炎国时一并包含。",
+      "aliases": [
+        "Lungmen"
+      ]
+    },
+    {
+      "id": "ursus",
+      "name": "乌萨斯",
+      "kind": "country",
+      "parent": null,
+      "description": "切尔诺伯格与北境等剧情舞台。",
+      "aliases": []
+    },
+    {
+      "id": "chernobog",
+      "name": "切尔诺伯格",
+      "kind": "city",
+      "parent": "ursus",
+      "description": "乌萨斯下的城市入口；保留切城事件相关主线。",
+      "aliases": [
+        "切城"
+      ]
+    },
+    {
+      "id": "victoria",
+      "name": "维多利亚",
+      "kind": "country",
+      "parent": null,
+      "description": "小丘郡、伦蒂尼姆及其他维多利亚地区。",
+      "aliases": []
+    },
+    {
+      "id": "columbia",
+      "name": "哥伦比亚",
+      "kind": "country",
+      "parent": null,
+      "description": "特里蒙、达维镇等作品主要舞台。",
+      "aliases": []
+    },
+    {
+      "id": "kazimierz",
+      "name": "卡西米尔",
+      "kind": "country",
+      "parent": null,
+      "description": "骑士竞技与卡西米尔地区故事。",
+      "aliases": []
+    },
+    {
+      "id": "leithanien",
+      "name": "莱塔尼亚",
+      "kind": "country",
+      "parent": null,
+      "description": "沃伦姆德、维谢海姆及崔林特尔梅等地。",
+      "aliases": []
+    },
+    {
+      "id": "siracusa",
+      "name": "叙拉古",
+      "kind": "country",
+      "parent": null,
+      "description": "叙拉古城市及其相关故事。",
+      "aliases": []
+    },
+    {
+      "id": "laterano",
+      "name": "拉特兰",
+      "kind": "country",
+      "parent": null,
+      "description": "按故事舞台归类；拉特兰角色出场不构成地点依据。",
+      "aliases": []
+    },
+    {
+      "id": "iberia",
+      "name": "伊比利亚",
+      "kind": "country",
+      "parent": null,
+      "description": "海岸城镇、修道院与近海等故事舞台。",
+      "aliases": []
+    },
+    {
+      "id": "aegir",
+      "name": "阿戈尔",
+      "kind": "country",
+      "parent": null,
+      "description": "海下阿戈尔故事；不会把深海猎人出场作品全部归入。",
+      "aliases": []
+    },
+    {
+      "id": "kjerag",
+      "name": "谢拉格",
+      "kind": "country",
+      "parent": null,
+      "description": "圣山与谢拉格城镇故事。",
+      "aliases": []
+    },
+    {
+      "id": "sargon",
+      "name": "萨尔贡",
+      "kind": "country",
+      "parent": null,
+      "description": "丛林、沙漠街市与当地聚落。",
+      "aliases": []
+    },
+    {
+      "id": "bolivar",
+      "name": "玻利瓦尔",
+      "kind": "country",
+      "parent": null,
+      "description": "包含多索雷斯；不按在场外国势力重复归属。",
+      "aliases": []
+    },
+    {
+      "id": "dossoles",
+      "name": "多索雷斯",
+      "kind": "city",
+      "parent": "bolivar",
+      "description": "玻利瓦尔下的城市入口。",
+      "aliases": [
+        "双日城"
+      ]
+    },
+    {
+      "id": "rim_biliton",
+      "name": "雷姆必拓",
+      "kind": "country",
+      "parent": null,
+      "description": "雷姆必拓境内故事。",
+      "aliases": [
+        "Rim Billiton"
+      ]
+    },
+    {
+      "id": "sami",
+      "name": "萨米",
+      "kind": "country",
+      "parent": null,
+      "description": "萨米地区；尚未编入不代表没有相关剧情。",
+      "aliases": []
+    },
+    {
+      "id": "minos",
+      "name": "米诺斯",
+      "kind": "country",
+      "parent": null,
+      "description": "米诺斯地区与城市故事。",
+      "aliases": []
+    },
+    {
+      "id": "higashi",
+      "name": "东国",
+      "kind": "country",
+      "parent": null,
+      "description": "东国境内故事；联动异域不按视觉风格归入。",
+      "aliases": []
+    },
+    {
+      "id": "kazdel",
+      "name": "卡兹戴尔",
+      "kind": "country",
+      "parent": null,
+      "description": "卡兹戴尔当地故事；萨卡兹出场不构成地点依据。",
+      "aliases": []
+    },
+    {
+      "id": "siesta",
+      "name": "汐斯塔",
+      "kind": "place",
+      "parent": null,
+      "description": "以作品中的汐斯塔地点归档；不将迁城前后统一套用现时行政归属。",
+      "aliases": []
+    },
+    {
+      "id": "durin",
+      "name": "杜林地下聚落",
+      "kind": "place",
+      "parent": null,
+      "description": "地下聚落的独立地点标签，行政归属需逐作品核对。",
+      "aliases": []
+    },
+    {
+      "id": "rhodes",
+      "name": "罗德岛本舰",
+      "kind": "venue",
+      "parent": null,
+      "description": "移动载具与组织驻地；作为地点入口，不视作国家。",
+      "aliases": [
+        "本舰"
+      ]
+    },
+    {
+      "id": "special",
+      "name": "特殊空间与异域",
+      "kind": "special",
+      "parent": null,
+      "description": "内化宇宙、联动异域及未能对应普通行政地理的特殊舞台。",
+      "aliases": []
+    }
+  ],
+  "assignments": {
+    "act9d0": {
+      "title": "生于黑夜",
+      "regions": [
+        "kazdel"
+      ],
+      "note": "用户人工分类，已核对本地正文：DM-1《埋藏》行动后写有“卡兹戴尔东西部战场，军事缓冲区边缘”。据此将本作主要舞台归入卡兹戴尔；其他场景尚未逐一编目。",
+      "evidence": [
+        {
+          "kind": "user_annotation_verified_in_provided_text",
+          "title": "DM-1《埋藏》行动后（已核对原文）",
+          "url": "https://archer223.github.io/Terra-reading-room/#story/cn%3Aactivities%2Fact9d0%2Flevel_act9d0_01_end",
+          "story_id": "cn:activities/act9d0/level_act9d0_01_end",
+          "node_id": "l10",
+          "quote": "卡兹戴尔东西部战场，军事缓冲区边缘"
+        }
+      ]
+    },
+    "act55side": {
+      "title": "时间啊，向前！",
+      "regions": [
+        "ursus"
+      ],
+      "note": "用户手动分类：主要讲述乌萨斯小皇帝与塔露拉的故事，按用户判断将作品主要舞台归入乌萨斯。此为作品级整理，未逐场景核对。",
+      "evidence": [
+        {
+          "kind": "user_annotation",
+          "title": "用户人工归类（2026-11-03）；作品正文供复核",
+          "url": "https://archer223.github.io/Terra-reading-room/#book/act55side",
+          "statement": "里面主要讲了乌萨斯小皇帝和塔露拉的故事，所以属于乌萨斯"
+        }
+      ]
+    },
+    "1stact": {
+      "title": "骑兵与猎人",
+      "regions": [
+        "kazimierz"
+      ],
+      "note": "依据活动页场地资料，将卡西米尔列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：骑兵与猎人（社区资料）",
+          "url": "https://prts.wiki/w/%E9%AA%91%E5%85%B5%E4%B8%8E%E7%8C%8E%E4%BA%BA"
+        }
+      ]
+    },
+    "act3d0": {
+      "title": "火蓝之心",
+      "regions": [
+        "siesta"
+      ],
+      "note": "依据活动页场地资料，将汐斯塔列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：火蓝之心（社区资料）",
+          "url": "https://prts.wiki/w/%E7%81%AB%E8%93%9D%E4%B9%8B%E5%BF%83"
+        }
+      ]
+    },
+    "act5d0": {
+      "title": "喧闹法则",
+      "regions": [
+        "lungmen"
+      ],
+      "note": "依据活动页场地资料，将龙门列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：喧闹法则（社区资料）",
+          "url": "https://prts.wiki/w/%E5%96%A7%E9%97%B9%E6%B3%95%E5%88%99"
+        }
+      ]
+    },
+    "act11d0": {
+      "title": "沃伦姆德的薄暮",
+      "regions": [
+        "leithanien"
+      ],
+      "note": "依据活动页场地资料，将莱塔尼亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：沃伦姆德的薄暮（社区资料）",
+          "url": "https://prts.wiki/w/%E6%B2%83%E4%BC%A6%E5%A7%86%E5%BE%B7%E7%9A%84%E8%96%84%E6%9A%AE"
+        },
+        {
+          "title": "PRTS：沃伦姆德地理归属（社区资料）",
+          "url": "https://prts.wiki/w/%E6%B3%B0%E6%8B%89%E5%A4%A7%E5%85%B8%3A%E5%9C%B0%E7%90%86/%E6%B2%83%E4%BC%A6%E5%A7%86%E5%BE%B7"
+        }
+      ]
+    },
+    "act12d0": {
+      "title": "密林悍将归来",
+      "regions": [
+        "sargon"
+      ],
+      "note": "依据活动页场地资料，将萨尔贡列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：密林悍将归来（社区资料）",
+          "url": "https://prts.wiki/w/%E5%AF%86%E6%9E%97%E6%82%8D%E5%B0%86%E5%BD%92%E6%9D%A5"
+        }
+      ]
+    },
+    "act13d5": {
+      "title": "玛莉娅·临光",
+      "regions": [
+        "kazimierz"
+      ],
+      "note": "依据活动页场地资料，将卡西米尔列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：玛莉娅·临光（社区资料）",
+          "url": "https://prts.wiki/w/%E7%8E%9B%E8%8E%89%E5%A8%85%C2%B7%E4%B8%B4%E5%85%89"
+        }
+      ]
+    },
+    "act15d0": {
+      "title": "孤岛风云",
+      "regions": [
+        "columbia"
+      ],
+      "note": "依据活动页场地资料，将哥伦比亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：孤岛风云（社区资料）",
+          "url": "https://prts.wiki/w/%E5%AD%A4%E5%B2%9B%E9%A3%8E%E4%BA%91"
+        }
+      ]
+    },
+    "act16d5": {
+      "title": "画中人",
+      "regions": [
+        "yan"
+      ],
+      "note": "依据活动页场地资料，将炎国列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：画中人（社区资料）",
+          "url": "https://prts.wiki/w/%E7%94%BB%E4%B8%AD%E4%BA%BA"
+        }
+      ]
+    },
+    "act17d0": {
+      "title": "源石尘行动",
+      "regions": [
+        "sargon"
+      ],
+      "note": "依据活动页场地资料，将萨尔贡列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：源石尘行动（社区资料）",
+          "url": "https://prts.wiki/w/%E6%BA%90%E7%9F%B3%E5%B0%98%E8%A1%8C%E5%8A%A8"
+        }
+      ]
+    },
+    "act18d0": {
+      "title": "遗尘漫步",
+      "regions": [
+        "sargon",
+        "victoria"
+      ],
+      "note": "场地资料明确萨尔贡与维多利亚两个舞台，按多地区作品归档；本轮未穷尽历史插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：遗尘漫步（社区资料）",
+          "url": "https://prts.wiki/w/%E9%81%97%E5%B0%98%E6%BC%AB%E6%AD%A5"
+        }
+      ]
+    },
+    "act18d3": {
+      "title": "覆潮之下",
+      "regions": [
+        "iberia"
+      ],
+      "note": "依据活动页场地资料，将伊比利亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：覆潮之下（社区资料）",
+          "url": "https://prts.wiki/w/%E8%A6%86%E6%BD%AE%E4%B9%8B%E4%B8%8B"
+        }
+      ]
+    },
+    "act12side": {
+      "title": "多索雷斯假日",
+      "regions": [
+        "dossoles"
+      ],
+      "note": "依据活动页场地资料，将多索雷斯列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：多索雷斯假日（社区资料）",
+          "url": "https://prts.wiki/w/%E5%A4%9A%E7%B4%A2%E9%9B%B7%E6%96%AF%E5%81%87%E6%97%A5"
+        },
+        {
+          "title": "PRTS：多索雷斯地理归属（社区资料）",
+          "url": "https://prts.wiki/w/%E6%B3%B0%E6%8B%89%E5%A4%A7%E5%85%B8%3A%E5%9C%B0%E7%90%86/%E5%A4%9A%E7%B4%A2%E9%9B%B7%E6%96%AF"
+        }
+      ]
+    },
+    "act13side": {
+      "title": "长夜临光",
+      "regions": [
+        "kazimierz"
+      ],
+      "note": "依据活动页场地资料，将卡西米尔列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：长夜临光（社区资料）",
+          "url": "https://prts.wiki/w/%E9%95%BF%E5%A4%9C%E4%B8%B4%E5%85%89"
+        }
+      ]
+    },
+    "act14side": {
+      "title": "风雪过境",
+      "regions": [
+        "kjerag"
+      ],
+      "note": "依据活动页场地资料，将谢拉格列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：风雪过境（社区资料）",
+          "url": "https://prts.wiki/w/%E9%A3%8E%E9%9B%AA%E8%BF%87%E5%A2%83"
+        }
+      ]
+    },
+    "act15side": {
+      "title": "将进酒",
+      "regions": [
+        "yan"
+      ],
+      "note": "作品主要舞台为炎国尚蜀。标签不穷尽作品中的插叙地点，尚未逐场景核对。",
+      "evidence": [
+        {
+          "title": "PRTS：将进酒（社区资料）",
+          "url": "https://prts.wiki/w/%E5%B0%86%E8%BF%9B%E9%85%92"
+        }
+      ]
+    },
+    "act16side": {
+      "title": "吾导先路",
+      "regions": [
+        "laterano"
+      ],
+      "note": "依据活动页场地资料，将拉特兰列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：吾导先路（社区资料）",
+          "url": "https://prts.wiki/w/%E5%90%BE%E5%AF%BC%E5%85%88%E8%B7%AF"
+        }
+      ]
+    },
+    "act17side": {
+      "title": "愚人号",
+      "regions": [
+        "iberia"
+      ],
+      "note": "依据活动页场地资料，将伊比利亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：愚人号（社区资料）",
+          "url": "https://prts.wiki/w/%E6%84%9A%E4%BA%BA%E5%8F%B7"
+        }
+      ]
+    },
+    "act18side": {
+      "title": "尘影余音",
+      "regions": [
+        "leithanien"
+      ],
+      "note": "依据活动页场地资料，将莱塔尼亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：尘影余音（社区资料）",
+          "url": "https://prts.wiki/w/%E5%B0%98%E5%BD%B1%E4%BD%99%E9%9F%B3"
+        }
+      ]
+    },
+    "act19side": {
+      "title": "绿野幻梦",
+      "regions": [
+        "columbia"
+      ],
+      "note": "依据活动页场地资料，将哥伦比亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：绿野幻梦（社区资料）",
+          "url": "https://prts.wiki/w/%E7%BB%BF%E9%87%8E%E5%B9%BB%E6%A2%A6"
+        }
+      ]
+    },
+    "act20side": {
+      "title": "理想城：长夏狂欢季",
+      "regions": [
+        "sargon",
+        "durin"
+      ],
+      "note": "活动简介将舞台设在阿卡胡拉地下的杜林城市，场地资料标注萨尔贡。保留萨尔贡与杜林地下聚落两个入口；这不表示所有杜林聚落都属于萨尔贡。",
+      "evidence": [
+        {
+          "title": "PRTS：理想城：长夏狂欢季（社区资料）",
+          "url": "https://prts.wiki/w/%E7%90%86%E6%83%B3%E5%9F%8E%EF%BC%9A%E9%95%BF%E5%A4%8F%E7%8B%82%E6%AC%A2%E5%AD%A3"
+        }
+      ]
+    },
+    "act21side": {
+      "title": "叙拉古人",
+      "regions": [
+        "siracusa"
+      ],
+      "note": "依据活动页场地资料，将叙拉古列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：叙拉古人（社区资料）",
+          "url": "https://prts.wiki/w/%E5%8F%99%E6%8B%89%E5%8F%A4%E4%BA%BA"
+        }
+      ]
+    },
+    "act22side": {
+      "title": "照我以火",
+      "regions": [
+        "victoria"
+      ],
+      "note": "依据活动页场地资料，将维多利亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：照我以火（社区资料）",
+          "url": "https://prts.wiki/w/%E7%85%A7%E6%88%91%E4%BB%A5%E7%81%AB"
+        }
+      ]
+    },
+    "act23side": {
+      "title": "登临意",
+      "regions": [
+        "yan"
+      ],
+      "note": "作品主要舞台为炎国玉门边塞。标签属于整部作品，尚未逐场景核对。",
+      "evidence": [
+        {
+          "title": "PRTS：登临意（社区资料）",
+          "url": "https://prts.wiki/w/%E7%99%BB%E4%B8%B4%E6%84%8F"
+        }
+      ]
+    },
+    "act24side": {
+      "title": "落叶逐火",
+      "regions": [
+        "higashi"
+      ],
+      "note": "依据活动页场地资料，将东国列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：落叶逐火（社区资料）",
+          "url": "https://prts.wiki/w/%E8%90%BD%E5%8F%B6%E9%80%90%E7%81%AB"
+        }
+      ]
+    },
+    "act25side": {
+      "title": "孤星",
+      "regions": [
+        "columbia"
+      ],
+      "note": "依据活动页场地资料，将哥伦比亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：孤星（社区资料）",
+          "url": "https://prts.wiki/w/%E5%AD%A4%E6%98%9F"
+        }
+      ]
+    },
+    "act26side": {
+      "title": "空想花庭",
+      "regions": [
+        "iberia"
+      ],
+      "note": "主要场地为伊比利亚的修道院；未因拉特兰角色出场将作品改归拉特兰。",
+      "evidence": [
+        {
+          "title": "PRTS：空想花庭（社区资料）",
+          "url": "https://prts.wiki/w/%E7%A9%BA%E6%83%B3%E8%8A%B1%E5%BA%AD"
+        }
+      ]
+    },
+    "act27side": {
+      "title": "火山旅梦",
+      "regions": [
+        "siesta"
+      ],
+      "note": "依据活动页场地资料，将汐斯塔列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：火山旅梦（社区资料）",
+          "url": "https://prts.wiki/w/%E7%81%AB%E5%B1%B1%E6%97%85%E6%A2%A6"
+        }
+      ]
+    },
+    "act28side": {
+      "title": "不义之财",
+      "regions": [
+        "columbia"
+      ],
+      "note": "依据活动页场地资料，将哥伦比亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：不义之财（社区资料）",
+          "url": "https://prts.wiki/w/%E4%B8%8D%E4%B9%89%E4%B9%8B%E8%B4%A2"
+        }
+      ]
+    },
+    "act29side": {
+      "title": "崔林特尔梅之金",
+      "regions": [
+        "leithanien"
+      ],
+      "note": "依据活动页场地资料，将莱塔尼亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：崔林特尔梅之金（社区资料）",
+          "url": "https://prts.wiki/w/%E5%B4%94%E6%9E%97%E7%89%B9%E5%B0%94%E6%A2%85%E4%B9%8B%E9%87%91"
+        }
+      ]
+    },
+    "act30side": {
+      "title": "银心湖列车",
+      "regions": [
+        "kjerag"
+      ],
+      "note": "依据活动页场地资料，将谢拉格列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：银心湖列车（社区资料）",
+          "url": "https://prts.wiki/w/%E9%93%B6%E5%BF%83%E6%B9%96%E5%88%97%E8%BD%A6"
+        }
+      ]
+    },
+    "act31side": {
+      "title": "怀黍离",
+      "regions": [
+        "yan"
+      ],
+      "note": "作品主要舞台为炎国大荒城的农业地块。标签属于整部作品，尚未逐场景核对。",
+      "evidence": [
+        {
+          "title": "PRTS：怀黍离（社区资料）",
+          "url": "https://prts.wiki/w/%E6%80%80%E9%BB%8D%E7%A6%BB"
+        }
+      ]
+    },
+    "act32side": {
+      "title": "水晶箭行动",
+      "regions": [
+        "dossoles"
+      ],
+      "note": "主要场地为多索雷斯的克里斯达尔艺术馆，随城市归入玻利瓦尔；不因联动角色或外国势力出场归入哥伦比亚。",
+      "evidence": [
+        {
+          "title": "PRTS：水晶箭行动（社区资料）",
+          "url": "https://prts.wiki/w/%E6%B0%B4%E6%99%B6%E7%AE%AD%E8%A1%8C%E5%8A%A8"
+        },
+        {
+          "title": "PRTS：多索雷斯地理归属（社区资料）",
+          "url": "https://prts.wiki/w/%E6%B3%B0%E6%8B%89%E5%A4%A7%E5%85%B8%3A%E5%9C%B0%E7%90%86/%E5%A4%9A%E7%B4%A2%E9%9B%B7%E6%96%AF"
+        }
+      ]
+    },
+    "act33side": {
+      "title": "巴别塔",
+      "regions": [
+        "kazdel"
+      ],
+      "note": "卡兹戴尔列为主要舞台。场地资料另有带问号的本舰记录，本轮未将其当作确定地点。",
+      "evidence": [
+        {
+          "title": "PRTS：巴别塔（社区资料）",
+          "url": "https://prts.wiki/w/%E5%B7%B4%E5%88%AB%E5%A1%94"
+        }
+      ]
+    },
+    "act34side": {
+      "title": "生路",
+      "regions": [
+        "aegir"
+      ],
+      "note": "依据活动页场地资料，将阿戈尔列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：生路（社区资料）",
+          "url": "https://prts.wiki/w/%E7%94%9F%E8%B7%AF"
+        }
+      ]
+    },
+    "act35side": {
+      "title": "太阳甩在身后",
+      "regions": [
+        "sargon"
+      ],
+      "note": "依据活动页场地资料，将萨尔贡列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：太阳甩在身后（社区资料）",
+          "url": "https://prts.wiki/w/%E5%A4%AA%E9%98%B3%E7%94%A9%E5%9C%A8%E8%BA%AB%E5%90%8E"
+        }
+      ]
+    },
+    "act36side": {
+      "title": "泰拉饭",
+      "regions": [
+        "special"
+      ],
+      "note": "场地记为神秘地城，先归特殊空间；地城所在普通行政地区尚待核对。",
+      "evidence": [
+        {
+          "title": "PRTS：泰拉饭（社区资料）",
+          "url": "https://prts.wiki/w/%E6%B3%B0%E6%8B%89%E9%A5%AD"
+        }
+      ]
+    },
+    "act37side": {
+      "title": "追迹日落以西",
+      "regions": [
+        "victoria"
+      ],
+      "note": "依据活动页场地资料，将维多利亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：追迹日落以西（社区资料）",
+          "url": "https://prts.wiki/w/%E8%BF%BD%E8%BF%B9%E6%97%A5%E8%90%BD%E4%BB%A5%E8%A5%BF"
+        }
+      ]
+    },
+    "act38side": {
+      "title": "揭幕者们",
+      "regions": [
+        "siracusa"
+      ],
+      "note": "依据活动页场地资料，将叙拉古列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：揭幕者们（社区资料）",
+          "url": "https://prts.wiki/w/%E6%8F%AD%E5%B9%95%E8%80%85%E4%BB%AC"
+        }
+      ]
+    },
+    "act39side": {
+      "title": "出苍白海",
+      "regions": [
+        "iberia"
+      ],
+      "note": "依据活动页场地资料，将伊比利亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：出苍白海（社区资料）",
+          "url": "https://prts.wiki/w/%E5%87%BA%E8%8B%8D%E7%99%BD%E6%B5%B7"
+        }
+      ]
+    },
+    "act40side": {
+      "title": "相见欢",
+      "regions": [
+        "yan"
+      ],
+      "note": "作品主要舞台为炎国百灶。标签属于整部作品，尚未逐场景核对。",
+      "evidence": [
+        {
+          "title": "PRTS：相见欢（社区资料）",
+          "url": "https://prts.wiki/w/%E7%9B%B8%E8%A7%81%E6%AC%A2"
+        }
+      ]
+    },
+    "act41side": {
+      "title": "挽歌燃烧殆尽",
+      "regions": [
+        "victoria"
+      ],
+      "note": "依据活动页场地资料，将维多利亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：挽歌燃烧殆尽（社区资料）",
+          "url": "https://prts.wiki/w/%E6%8C%BD%E6%AD%8C%E7%87%83%E7%83%A7%E6%AE%86%E5%B0%BD"
+        }
+      ]
+    },
+    "act42side": {
+      "title": "众生行记",
+      "regions": [
+        "laterano"
+      ],
+      "note": "依据活动页场地资料，将拉特兰列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：众生行记（社区资料）",
+          "url": "https://prts.wiki/w/%E4%BC%97%E7%94%9F%E8%A1%8C%E8%AE%B0"
+        }
+      ]
+    },
+    "act43side": {
+      "title": "红丝绒",
+      "regions": [
+        "columbia"
+      ],
+      "note": "依据活动页场地资料，将哥伦比亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：红丝绒（社区资料）",
+          "url": "https://prts.wiki/w/%E7%BA%A2%E4%B8%9D%E7%BB%92"
+        }
+      ]
+    },
+    "act44side": {
+      "title": "墟",
+      "regions": [
+        "higashi"
+      ],
+      "note": "依据活动页场地资料，将东国列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：墟（社区资料）",
+          "url": "https://prts.wiki/w/%E5%A2%9F"
+        }
+      ]
+    },
+    "act45side": {
+      "title": "无忧梦呓",
+      "regions": [
+        "victoria"
+      ],
+      "note": "依据活动页场地资料，将维多利亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：无忧梦呓（社区资料）",
+          "url": "https://prts.wiki/w/%E6%97%A0%E5%BF%A7%E6%A2%A6%E5%91%93"
+        }
+      ]
+    },
+    "act46side": {
+      "title": "雪山降临1101",
+      "regions": [
+        "kjerag"
+      ],
+      "note": "依据活动页场地资料，将谢拉格列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：雪山降临1101（社区资料）",
+          "url": "https://prts.wiki/w/%E9%9B%AA%E5%B1%B1%E9%99%8D%E4%B8%B41101"
+        }
+      ]
+    },
+    "act47side": {
+      "title": "未许之地",
+      "regions": [
+        "columbia"
+      ],
+      "note": "依据活动页场地资料，将哥伦比亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：未许之地（社区资料）",
+          "url": "https://prts.wiki/w/%E6%9C%AA%E8%AE%B8%E4%B9%8B%E5%9C%B0"
+        }
+      ]
+    },
+    "act48side": {
+      "title": "雅赛努斯复仇记",
+      "regions": [
+        "minos"
+      ],
+      "note": "依据活动页场地资料，将米诺斯列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：雅赛努斯复仇记（社区资料）",
+          "url": "https://prts.wiki/w/%E9%9B%85%E8%B5%9B%E5%8A%AA%E6%96%AF%E5%A4%8D%E4%BB%87%E8%AE%B0"
+        }
+      ]
+    },
+    "act49side": {
+      "title": "辞岁行",
+      "regions": [
+        "yan"
+      ],
+      "note": "场地资料列出炎国飞雪天镜与岁陵，按炎国作品归档；尚未逐场景核对。",
+      "evidence": [
+        {
+          "title": "PRTS：辞岁行（社区资料）",
+          "url": "https://prts.wiki/w/%E8%BE%9E%E5%B2%81%E8%A1%8C"
+        }
+      ]
+    },
+    "act50side": {
+      "title": "泡影苍霆",
+      "regions": [
+        "special"
+      ],
+      "note": "场地记为泡影国，作为联动异域单列；没有按美术风格推定为东国。",
+      "evidence": [
+        {
+          "title": "PRTS：泡影苍霆（社区资料）",
+          "url": "https://prts.wiki/w/%E6%B3%A1%E5%BD%B1%E8%8B%8D%E9%9C%86"
+        }
+      ]
+    },
+    "act51side": {
+      "title": "人们，我们",
+      "regions": [
+        "ursus"
+      ],
+      "note": "依据活动页场地资料，将乌萨斯列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：人们，我们（社区资料）",
+          "url": "https://prts.wiki/w/%E4%BA%BA%E4%BB%AC%EF%BC%8C%E6%88%91%E4%BB%AC"
+        }
+      ]
+    },
+    "act53side": {
+      "title": "直到大地变成一颗酸橙",
+      "regions": [
+        "rim_biliton"
+      ],
+      "note": "依据活动页场地资料，将雷姆必拓列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：直到大地变成一颗酸橙（社区资料）",
+          "url": "https://prts.wiki/w/%E7%9B%B4%E5%88%B0%E5%A4%A7%E5%9C%B0%E5%8F%98%E6%88%90%E4%B8%80%E9%A2%97%E9%85%B8%E6%A9%99"
+        }
+      ]
+    },
+    "act54side": {
+      "title": "月行水上",
+      "regions": [
+        "laterano"
+      ],
+      "note": "依据活动页场地资料，将拉特兰列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：月行水上（社区资料）",
+          "url": "https://prts.wiki/w/%E6%9C%88%E8%A1%8C%E6%B0%B4%E4%B8%8A"
+        }
+      ]
+    },
+    "act52side": {
+      "title": "昨日海",
+      "regions": [
+        "iberia"
+      ],
+      "note": "依据活动页场地资料，将伊比利亚列为作品主要舞台。标签属于整部作品，尚未逐场景核对，也不穷尽插叙地点。",
+      "evidence": [
+        {
+          "title": "PRTS：昨日海（社区资料）",
+          "url": "https://prts.wiki/w/%E6%98%A8%E6%97%A5%E6%B5%B7"
+        }
+      ]
+    },
+    "main_0": {
+      "title": "黑暗时代·上",
+      "regions": [
+        "chernobog"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_1": {
+      "title": "黑暗时代·下",
+      "regions": [
+        "chernobog"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_2": {
+      "title": "异卵同生",
+      "regions": [
+        "lungmen"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_4": {
+      "title": "急性衰竭",
+      "regions": [
+        "chernobog"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_5": {
+      "title": "靶向药物",
+      "regions": [
+        "lungmen"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_6": {
+      "title": "局部坏死",
+      "regions": [
+        "lungmen",
+        "chernobog"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_7": {
+      "title": "苦难摇篮",
+      "regions": [
+        "chernobog"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_8": {
+      "title": "怒号光明",
+      "regions": [
+        "chernobog"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_9": {
+      "title": "风暴瞭望",
+      "regions": [
+        "victoria"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_10": {
+      "title": "破碎日冕",
+      "regions": [
+        "victoria"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_11": {
+      "title": "淬火尘霾",
+      "regions": [
+        "victoria"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_12": {
+      "title": "惊霆无声",
+      "regions": [
+        "victoria"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_13": {
+      "title": "恶兆湍流",
+      "regions": [
+        "victoria"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_14": {
+      "title": "慈悲灯塔",
+      "regions": [
+        "victoria",
+        "special"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_15": {
+      "title": "离解复合",
+      "regions": [
+        "rhodes",
+        "special"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_16": {
+      "title": "反常光谱",
+      "regions": [
+        "ursus"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    },
+    "main_17": {
+      "title": "相变临界",
+      "regions": [
+        "ursus"
+      ],
+      "note": "按本章场地与章节简介整理主要舞台；不表示本章所有场景发生在同一地点。",
+      "evidence": [
+        {
+          "title": "PRTS：关卡一览/主题曲（社区资料）",
+          "url": "https://prts.wiki/w/%E5%85%B3%E5%8D%A1%E4%B8%80%E8%A7%88/%E4%B8%BB%E9%A2%98%E6%9B%B2"
+        }
+      ]
+    }
+  }
+}

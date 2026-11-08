@@ -1,0 +1,74 @@
+{
+  "format": "tar.gz.parts.v1",
+  "bodies": 2061,
+  "cutoff": "2026-11-03",
+  "source_manifest_sha256": "d7525322a305b1d51f3773af22fb82a742ea1a1b3bedbea87a8b6557e86c0636",
+  "sha256": "99c88b526c59dee572f0e0a238f1d69ad05248f66a33efda4dea20bc6e1636b7",
+  "parts": [
+    {
+      "file": "provided-000.part",
+      "bytes": 2097152,
+      "sha256": "a7428a21813edc3d898d0496295eaa3cd7faf2208be65b8c15efbd9d7c8f1753"
+    },
+    {
+      "file": "provided-001.part",
+      "bytes": 2097152,
+      "sha256": "97c012797e710569f4ad0604532335d07796863b607fa27dbe3b2f530894be34"
+    },
+    {
+      "file": "provided-002.part",
+      "bytes": 2097152,
+      "sha256": "6358d5a23651d885948a0e89dab2a765ac4d8e2ee2798936aae8c7bc2d02aa4c"
+    },
+    {
+      "file": "provided-003.part",
+      "bytes": 2097152,
+      "sha256": "db8a3fccc2743a75f13796eac11beef7ae8e2704a2523d92f2eb42ca34020061"
+    },
+    {
+      "file": "provided-004.part",
+      "bytes": 2097152,
+      "sha256": "c52ec180b2480a60883b02711f330ba8fabd9e44e7a8c6efd64cd437fab02c00"
+    },
+    {
+      "file": "provided-005.part",
+      "bytes": 2097152,
+      "sha256": "0d60f133a4618ce117099d948cc9a685af5c0369f529c198ccb3ae736490307c"
+    },
+    {
+      "file": "provided-006.part",
+      "bytes": 2097152,
+      "sha256": "832f05337a726f32e5bb8dbde560c190a648e90c6f1914d7c0328d8077d56e8a"
+    },
+    {
+      "file": "provided-007.part",
+      "bytes": 2097152,
+      "sha256": "55e6704ae18780a97fd12c41f499957fbfe6026327c9a06bf5f67099173b31ae"
+    },
+    {
+      "file": "provided-008.part",
+      "bytes": 2097152,
+      "sha256": "1bb117929438ec72df3cf8ca1617ed8a37f6ec99001f0ac8d2f515e870f15120"
+    },
+    {
+      "file": "provided-009.part",
+      "bytes": 2097152,
+      "sha256": "1fcba8d62999c8544a84f175a98fcffe1d1362df84f59486dd93e440a9889311"
+    },
+    {
+      "file": "provided-010.part",
+      "bytes": 2097152,
+      "sha256": "b055bb756c42776b7ced6baa91cb2fa505f0208c677b896a3494e09cfab4f901"
+    },
+    {
+      "file": "provided-011.part",
+      "bytes": 2097152,
+      "sha256": "fc22b8c5d9a1bfe9fd05dff7b09eb7fa5825024ae7891037a3ac0c094d0393cc"
+    },
+    {
+      "file": "provided-012.part",
+      "bytes": 509733,
+      "sha256": "8d261c1dd970bf39ae0fe970974169106ae1d922c4497c7586f76311a047fa8c"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "reviewed_at": "2026-11-03",
+  "method": "剧情时间采用正文字幕线索并注明插叙可能；现实开放时间区分作品首次开放与单篇解锁。未知日期不推定。",
+  "groups": {
+    "main_0": {
+      "title": "黑暗时代·上",
+      "release": {
+        "label": "2019-04-30 10:00（iOS）；2019-05-01 10:00（安卓）",
+        "date": "2019-04-30",
+        "status": "confirmed",
+        "scope": "work",
+        "note": "以国服公测最初开放的序章为参考，区分平台。",
+        "sources": [{"title": "官方：公测开启时间公告", "url": "https://ak.hypergryph.com/news/201904662"}]
+      }
+    },
+    "main_9": {
+      "title": "风暴瞭望",
+      "release": {
+        "label": "2021-09-17 16:00（国服）",
+        "date": "2021-09-17",
+        "status": "confirmed",
+        "scope": "work",
+        "sources": [{"title": "官方：主线风暴瞭望开放公告", "url": "https://ak.hypergryph.com/news/2021099183"}]
+      }
+    }
+  }
+}

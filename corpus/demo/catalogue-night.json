@@ -1,0 +1,26 @@
+{
+  "schema_version":1,
+  "id":"demo:catalogue-night",
+  "title":"灯下的编目员",
+  "origin":"original_demo",
+  "source_url":"",
+  "description":"本项目原创排版与分支测试文本，非明日方舟官方剧情。",
+  "warnings":[],
+  "nodes":[
+    {"id":"l1","kind":"scene","text":"原创阅读样本 · 非官方剧情"},
+    {"id":"l2","kind":"narration","text":"晚雨停在了窗沿。阅览室的灯还亮着，桌上的书被分成了几摞，夹着颜色各异的纸签。"},
+    {"id":"l3","kind":"dialogue","speaker":"编目员","text":"一本书有许多种读法。有人沿着目录往前走，有人先去找一位熟悉的人。"},
+    {"id":"l4","kind":"dialogue","speaker":"读者","text":"如果我今天只读一小段，明天还能回到这里吗？"},
+    {"id":"l5","kind":"dialogue","speaker":"编目员","text":"当然。留下一枚书签就好。现在，你想先试一试哪一种读法？"},
+    {"id":"l6","kind":"choice","options":[{"label":"沿着目录，从第一页读起","value":"1","target":"l7"},{"label":"留下一枚书签，先看看窗外","value":"2","target":"l10"}]},
+    {"id":"l7","kind":"branch","text":"备选分支一 · 沿着目录阅读"},
+    {"id":"l8","kind":"narration","text":"读者把目录翻到最前面。一行行标题像沿路点亮的灯，尚未走过的地方仍然安静地留在纸上。"},
+    {"id":"l9","kind":"dialogue","speaker":"编目员","text":"下一段路不必现在就看见。读完这一页，再往前一步。"},
+    {"id":"l10","kind":"branch","text":"备选分支二 · 先留书签；本段与分支一互为备选，不是接续发生的情节"},
+    {"id":"l11","kind":"narration","text":"纸签落在页边，露出一角浅绿。读者推开窗，雨后的空气带着清凉，远处有人合上了最后一把伞。"},
+    {"id":"l12","kind":"dialogue","speaker":"读者","text":"原来暂停也能算一种进度。"},
+    {"id":"l13","kind":"branch","text":"两条分支在此汇合"},
+    {"id":"l14","kind":"narration","text":"编目员在卡片上补好日期，把书轻轻推回灯下。故事留在了原来的位置，等下一次有人翻开。"},
+    {"id":"l15","kind":"dialogue","speaker":"编目员","text":"今晚就读到这里。你回来的时候，灯会亮着。"}
+  ]
+}

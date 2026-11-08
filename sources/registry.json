@@ -1,0 +1,112 @@
+[
+  {
+    "id": "user-exports",
+    "title": "用户提供的本地 Excel 与原始脚本",
+    "url": null,
+    "kind": "本次正文来源",
+    "status": "79 个工作簿已核对，接入 2061 个剧情片段",
+    "scope": "主线、活动、故事集、干员密录；长名称变体由同批本地原始脚本补回",
+    "next": "逐篇考证事件时间与具体解锁时间；不从角色出身或发布时间推定剧情时间。"
+  },
+  {
+    "id": "official-game",
+    "title": "明日方舟官方网站",
+    "url": "https://ak.hypergryph.com/",
+    "kind": "官方来源",
+    "status": "入口已核验，历史作品待盘点",
+    "scope": "活动公告、网页活动、官方衍生作品入口",
+    "next": "逐年建立站外故事清单，保留原始发布时间。"
+  },
+  {
+    "id": "official-comic",
+    "title": "泰拉记事社",
+    "url": "https://comic.hypergryph.com/terra-historicus/",
+    "kind": "官方来源",
+    "status": "作品名与原始入口已索引",
+    "scope": "官方漫画作品",
+    "next": "逐作品核对集数、日期与版本；暂不收集漫画图像。"
+  },
+  {
+    "id": "astr-data",
+    "title": "ArknightsStoryJson",
+    "url": "https://github.com/050644zf/ArknightsStoryJson",
+    "kind": "社区数据",
+    "status": "历史公开目录版本已保留；本次正文以用户提供的本地导出为准",
+    "scope": "国服主线、活动、故事集与密录目录",
+    "next": "核对目录未覆盖的玩法叙事、档案、模组及战斗叙事。"
+  },
+  {
+    "id": "astr-reader",
+    "title": "Arknights Story Text Reader",
+    "url": "https://astr.pages.dev/#/zh_CN/menu",
+    "kind": "社区阅读器",
+    "status": "章节定位参数已从源码核对",
+    "scope": "站外原文阅读入口",
+    "next": "链接可作为阅读入口，不能证明内容覆盖全部官方作品。"
+  },
+  {
+    "id": "terra-chronicle",
+    "title": "泰拉纪事 · 明日方舟剧情梳理",
+    "url": "https://chusnrl-tech.github.io/arknights-lore/",
+    "kind": "社区剧情梳理",
+    "status": "已核验入口，登记为辅助参考",
+    "scope": "泰拉时间线、列国、阵营、人物与章节／SideStory 对照",
+    "next": "逐项对照游戏原文核验地区与事件时间，保留社区整理和推断的标注。",
+    "checked_at": "2026-11-03"
+  },
+  {
+    "id": "prts-story-index",
+    "title": "PRTS 剧情一览",
+    "url": "https://prts.wiki/w/%E5%89%A7%E6%83%85%E4%B8%80%E8%A7%88",
+    "kind": "社区剧情索引",
+    "status": "已核验入口，用于篇目查漏与正文定位",
+    "scope": "游戏本体剧情目录及相关分类入口；干员密录、外部剧情另列链接",
+    "next": "核对篇目、关卡与行动前后顺序；具体地区及年代以对应正文和官方资料复核。",
+    "checked_at": "2026-11-03"
+  },
+  {
+    "id": "prts-regions",
+    "title": "PRTS 地区编目资料",
+    "url": "https://prts.wiki/w/关卡一览/主题曲",
+    "kind": "社区资料",
+    "status": "用于作品主要舞台初编；非官方分类",
+    "scope": "章节简介、活动页场地字段与城市地理归属；每部作品另留依据",
+    "next": "逐篇核对故事集、干员密录和漫画的实际场景，不按角色出身推定。"
+  },
+  {
+    "id": "astr-parser",
+    "title": "ASTR-Script 格式说明",
+    "url": "https://github.com/050644zf/ASTR-Script/blob/main/parse.md",
+    "kind": "技术来源",
+    "status": "导入格式已核对",
+    "scope": "prop、attributes、原始段落号、Decision 与 Predicate",
+    "next": "未知指令保留并进入校对清单，不静默删除。"
+  },
+  {
+    "id": "official-social",
+    "title": "官方微博、微信与视频账号",
+    "url": null,
+    "kind": "待核验来源",
+    "status": "账号白名单与历史内容待盘点",
+    "scope": "官方短篇、信件、角色故事与短片",
+    "next": "从官方入口核实账号后按年份查漏，不将转载当作原始出处。"
+  },
+  {
+    "id": "official-books",
+    "title": "官方出版物与设定资料",
+    "url": null,
+    "kind": "待核验来源",
+    "status": "书目待盘点",
+    "scope": "设定集、设定书、小说及相关出版材料",
+    "next": "先登记书名、版本与页码，按已确认权限决定正文接入方式。"
+  },
+  {
+    "id": "epub-standard",
+    "title": "EPUB 3 与 EPUBCheck",
+    "url": "https://www.w3.org/publishing/epubcheck/",
+    "kind": "技术来源",
+    "status": "采用 EPUB 3 输出",
+    "scope": "电子书资源、目录与结构校验",
+    "next": "结构检查之外，使用 EPUBCheck 与目标阅读器验证。"
+  }
+]

@@ -1,0 +1,5 @@
+[
+  {"id":"beginning","title":"从最初读起","eyebrow":"主线 · 官方篇章顺序","description":"从主线序章开始，按游戏目录推进。这里保留目录顺序，不推定故事内时间。","group_ids":["main_0","main_1","main_2","main_3"]},
+  {"id":"early-events","title":"早期活动书架","eyebrow":"活动 · 上游日期顺序","description":"从三个早期活动入口开始回顾。每个活动保留自己的篇章与行动前后顺序。","group_ids":["1stact","act3d0","act5d0"]},
+  {"id":"short-stories","title":"从一篇短故事开始","eyebrow":"故事集 · 轻量阅读入口","description":"选择一个早期故事集，按篇阅读。完整的前置阅读关系尚待人工校订。","group_ids":["act4d0","act6d5","act7d5"]}
+]

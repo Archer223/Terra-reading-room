@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f4ed">
+  <meta name="description" content="明日方舟剧情阅读、地区书架、双时间标注与 EPUB 电子书。">
+  <title>泰拉阅览室 · 故事留在这里</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%232e5146'/%3E%3Cpath d='M10 11h15l5 5v15H10zM15 11v20M25 11v7h5' fill='none' stroke='%23f5f4ed' stroke-width='1.5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">跳至正文</a>
+  <aside class="sidebar" aria-label="主导航">
+    <a href="#library" class="brand" aria-label="泰拉阅览室首页"><span class="brand-mark" aria-hidden="true">T<span>↗</span></span><span>泰拉阅览室<small>TERRA READING ROOM</small></span></a>
+    <div class="side-caption">故事，沿路拾起</div>
+    <nav id="navigation">
+      <a href="#library" data-nav="library"><span aria-hidden="true">▤</span>总书架<span class="nav-total" id="nav-total">—</span></a>
+      <a href="#regions" data-nav="regions"><span aria-hidden="true">⌖</span>地区书架</a>
+      <a href="#lists" data-nav="lists"><span aria-hidden="true">☷</span>阅读书单</a>
+      <a href="#shelf" data-nav="shelf"><span aria-hidden="true">♧</span>我的收藏<span class="nav-total" id="saved-count">0</span></a>
+      <a href="#sources" data-nav="sources"><span aria-hidden="true">⌁</span>来源与收录</a>
+    </nav>
+    <div class="side-divider"></div>
+    <div class="side-caption">随身携带的故事</div>
+    <a class="side-link" href="downloads/泰拉阅览室-剧情目录.epub" download><span aria-hidden="true">↓</span>下载目录 EPUB</a>
+    <a class="side-link" href="downloads/泰拉阅览室-地区剧情集.epub" download><span aria-hidden="true">↓</span>下载地区剧情集 EPUB</a>
+    <a class="side-link" href="#demo"><span aria-hidden="true">↗</span>试读原创样本</a>
+    <div class="side-bottom"><span class="status-dot"></span>个人资料整理项目<p>国服简中 · 非官方<br>正文阅读版 / 02</p></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><a class="mobile-brand" href="#library">泰拉阅览室</a><div class="breadcrumb" id="breadcrumb">阅览室 <span>/</span> 总书架</div><div class="top-actions"><span id="cutoff-label" class="cutoff">收录截止 2026.10.29</span><button class="icon-button" id="theme-button" aria-label="切换明暗主题" title="切换明暗主题">◐</button></div></header>
+    <main id="main" tabindex="-1"><div class="loading-state"><span class="status-dot"></span>正在打开阅览室…</div></main>
+    <footer class="footer"><span>每一篇故事，都有来处。</span><span>明日方舟剧情与相关作品归各自权利方所有。本站为非官方目录与个人阅读工具。</span></footer>
+  </div>
+  <nav class="mobile-nav" aria-label="移动导航"><a href="#library" data-nav="library">书架</a><a href="#regions" data-nav="regions">地区</a><a href="#lists" data-nav="lists">书单</a><a href="#shelf" data-nav="shelf">收藏</a><a href="#sources" data-nav="sources">来源</a></nav>
+  <input type="file" id="body-file" accept=".json,.txt" multiple hidden>
+  <input type="file" id="state-file" accept=".json" hidden>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
